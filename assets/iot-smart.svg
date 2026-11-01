@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#09131D;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Window Bar -->
+  <rect x="25" y="20" width="1150" height="46" rx="10" fill="#132333" stroke="#1E3A52"/>
+  <circle cx="50" cy="43" r="6" fill="#EF4444"/>
+  <circle cx="70" cy="43" r="6" fill="#F59E0B"/>
+  <circle cx="90" cy="43" r="6" fill="#10B981"/>
+  <text x="120" y="48" fill="#F0FDF4" font-size="13" font-weight="600">COMEDKares // Smart IoT Automation &amp; Sensor Telemetry Prototype [2025]</text>
+  <rect x="940" y="32" width="215" height="22" rx="5" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)"/>
+  <circle cx="954" cy="43" r="4" fill="#10B981"/>
+  <text x="966" y="47" fill="#10B981" font-size="11" font-weight="600">SYSTEM: ACTIVE · COMEDKARES</text>
+
+  <!-- Left: Sensor Array & Hardware State -->
+  <rect x="25" y="80" width="740" height="565" rx="12" fill="#0D1E2C" stroke="#1E3A52"/>
+  <text x="50" y="118" fill="#F0FDF4" font-size="16" font-weight="bold">Live Hardware Node &amp; Sensor Acquisition (Python Interface)</text>
+
+  <!-- Sensor Cards Grid -->
+  <g transform="translate(50, 140)">
+    <!-- Node 1: Ultrasonic / Distance -->
+    <rect x="0" y="0" width="210" height="100" rx="10" fill="#132638" stroke="#10B981" stroke-width="1.5"/>
+    <text x="18" y="28" fill="#10B981" font-size="11" font-family="monospace">PROXIMITY / ULTRASONIC</text>
+    <text x="18" y="62" fill="#FFFFFF" font-size="24" font-weight="bold">18.4 <tspan font-size="14" fill="#94A3B8">cm</tspan></text>
+    <text x="18" y="86" fill="#34D399" font-size="11">Target Detected (Safe Zone)</text>
+
+    <!-- Node 2: Temperature & Humidity -->
+    <rect x="230" y="0" width="210" height="100" rx="10" fill="#132638" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="18" y="28" fill="#38BDF8" font-size="11" font-family="monospace">ENVIRONMENTAL / DHT</text>
+    <text x="18" y="62" fill="#FFFFFF" font-size="24" font-weight="bold">24.6°C <tspan font-size="14" fill="#94A3B8">/ 54%</tspan></text>
+    <text x="18" y="86" fill="#38BDF8" font-size="11">Optimal Operating Range</text>
+
+    <!-- Node 3: Relay Automation Switch -->
+    <rect x="460" y="0" width="210" height="100" rx="10" fill="#132638" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="18" y="28" fill="#F59E0B" font-size="11" font-family="monospace">ACTUATOR RELAY #1</text>
+    <text x="18" y="62" fill="#FBBF24" font-size="22" font-weight="bold">ENERGIZED</text>
+    <text x="18" y="86" fill="#CBD5E1" font-size="11">Auto-Trigger Threshold Hit</text>
+  </g>
+
+  <!-- Real-Time Telemetry Stream Graph -->
+  <rect x="50" y="265" width="690" height="220" rx="10" fill="#09141F" stroke="#1E3A52"/>
+  <text x="70" y="295" fill="#E2E8F0" font-size="13" font-weight="600">Continuous Serial Telemetry (Baud: 115200)</text>
+  
+  <path d="M 70 420 Q 140 370 210 390 T 350 330 T 490 350 T 630 310 L 720 320" fill="none" stroke="#10B981" stroke-width="2.5"/>
+  <path d="M 70 420 Q 140 370 210 390 T 350 330 T 490 350 T 630 310 L 720 320 L 720 455 L 70 455 Z" fill="rgba(16,185,129,0.08)"/>
+
+  <!-- Python Controller Script Preview -->
+  <rect x="50" y="505" width="690" height="120" rx="8" fill="#070E17" stroke="#1E3A52"/>
+  <g transform="translate(66, 530)" font-family="monospace" font-size="11">
+    <text x="0" y="0" fill="#38BDF8">import serial, time, json</text>
+    <text x="0" y="20" fill="#94A3B8">ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)</text>
+    <text x="0" y="40" fill="#10B981">def read_sensor_payload(): data = ser.readline().decode('utf-8').strip()</text>
+    <text x="0" y="60" fill="#FBBF24">if int(data.get('distance')) &lt; 20: trigger_relay_actuator(state=True)</text>
+  </g>
+
+  <!-- Right: COMEDKares Internship Details & Prototype Highlights -->
+  <rect x="785" y="80" width="390" height="565" rx="12" fill="#0D1E2C" stroke="#1E3A52"/>
+  <text x="810" y="120" fill="#F0FDF4" font-size="16" font-weight="bold">COMEDKares Innovation Lab</text>
+  <text x="810" y="142" fill="#94A3B8" font-size="12">IoT &amp; Development Internship · 2025</text>
+
+  <g transform="translate(810, 175)">
+    <rect x="0" y="0" width="340" height="64" rx="8" fill="#132638" stroke="#1E3A52"/>
+    <text x="16" y="26" fill="#34D399" font-size="13" font-weight="bold">Hardware Prototyping</text>
+    <text x="16" y="48" fill="#94A3B8" font-size="11">Sensor integration, breadboarding &amp; circuits</text>
+
+    <rect x="0" y="78" width="340" height="64" rx="8" fill="#132638" stroke="#1E3A52"/>
+    <text x="16" y="104" fill="#38BDF8" font-size="13" font-weight="bold">Smart Automation Concepts</text>
+    <text x="16" y="126" fill="#94A3B8" font-size="11">Condition-based trigger loops in Python</text>
+
+    <rect x="0" y="156" width="340" height="64" rx="8" fill="#132638" stroke="#1E3A52"/>
+    <text x="16" y="182" fill="#FBBF24" font-size="13" font-weight="bold">Web Dashboard Monitoring</text>
+    <text x="16" y="204" fill="#94A3B8" font-size="11">Responsive HTML5 &amp; CSS3 status views</text>
+
+    <rect x="0" y="240" width="340" height="150" rx="8" fill="#10202E" stroke="#1E3A52"/>
+    <text x="16" y="270" fill="#F0FDF4" font-size="13" font-weight="bold">Core Accomplishments:</text>
+    <text x="16" y="296" fill="#CBD5E1" font-size="12">• Developed innovative IoT-based prototypes</text>
+    <text x="16" y="320" fill="#CBD5E1" font-size="12">• Gained hands-on circuit &amp; sensor experience</text>
+    <text x="16" y="344" fill="#CBD5E1" font-size="12">• Multidisciplinary teamwork &amp; problem-solving</text>
+    <text x="16" y="368" fill="#CBD5E1" font-size="12">• Real-time telemetry processing in Python</text>
+
+    <text x="16" y="425" fill="#64748B" font-size="11" font-family="monospace">COMEDKARES // INTERN: MONISHA S</text>
+  </g>
+</svg>

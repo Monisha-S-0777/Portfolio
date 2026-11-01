@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0D1117;font-family:'Courier New',Courier,monospace;">
+  <defs>
+    <linearGradient id="g-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal Window Outer -->
+  <rect x="25" y="20" width="1150" height="635" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+  
+  <!-- Terminal Header -->
+  <rect x="25" y="20" width="1150" height="48" rx="14" fill="#21262D" />
+  <circle cx="55" cy="44" r="6" fill="#FF5F56" />
+  <circle cx="75" cy="44" r="6" fill="#FFBD2E" />
+  <circle cx="95" cy="44" r="6" fill="#27C93F" />
+  <text x="125" y="49" fill="#C9D1D9" font-size="13" font-weight="bold">HAMMER // IPL CYBER INTELLIGENCE ESCAPE ROOM — PRAVRUTTI 2.0 [180+ PARTICIPANTS]</text>
+  
+  <!-- Main Grid Split: Terminal Left, Live Leaderboard Right -->
+  <!-- Left Side: Interactive CTF Terminal -->
+  <rect x="45" y="85" width="670" height="545" rx="8" fill="#0D1117" stroke="#30363D" />
+  <g transform="translate(65, 120)">
+    <text x="0" y="0" fill="#58A6FF" font-size="14">&gt; root@hammer-pravrutti:~$ ./verify_team_session.sh --room=IPL-CHALLENGE-04</text>
+    <text x="0" y="28" fill="#7EE787" font-size="13">[+] Session Authenticated: Team_Shadow_Strikers (Score: 680 pts)</text>
+    <text x="0" y="52" fill="#8B949E" font-size="13">[*] Challenge 04: "The Auction Cryptogram" [Binary + RSA Hashing]</text>
+    
+    <text x="0" y="92" fill="#E11D48" font-size="13">&gt;&gt;&gt; CLUE: Decrypt intercepted transmission between team franchises:</text>
+    <rect x="0" y="105" width="630" height="65" rx="6" fill="#161B22" stroke="#30363D"/>
+    <text x="15" y="132" fill="#FFA657" font-size="12">01010011 01001001 01001000 00101101 01010010 01010011 01000001</text>
+    <text x="15" y="152" fill="#79C0FF" font-size="12">HASH_SHA256: 7e89c0b1e4a05f32a76db... [REVERSE PYTHON TRACE]</text>
+
+    <text x="0" y="195" fill="#C9D1D9" font-size="13">&gt; Submit Flag Answer:</text>
+    <rect x="0" y="208" width="500" height="38" rx="6" fill="#090D13" stroke="#58A6FF"/>
+    <text x="15" y="232" fill="#58A6FF" font-size="14">flag{ipl_cyp_7701_solved}</text>
+    <text x="240" y="232" fill="#58A6FF" font-size="14">_</text>
+
+    <rect x="515" y="208" width="115" height="38" rx="6" fill="#238636" />
+    <text x="548" y="232" fill="#FFFFFF" font-size="13" font-weight="bold">VALIDATE</text>
+
+    <text x="0" y="280" fill="#7EE787" font-size="13">[SUCCESS] Answer Validated via Server-Side Hash Engine (Flask + SQLite)</text>
+    <text x="0" y="304" fill="#7EE787" font-size="13">[+] Time Bonus: +120s | Qualified for Top-8 Bracket</text>
+
+    <!-- Architecture mini diagram -->
+    <text x="0" y="348" fill="#8B949E" font-size="12">ARCHITECTURE SPECS:</text>
+    <text x="0" y="372" fill="#C9D1D9" font-size="12">• Backend: Python Flask / SQLite / Jinja2 / Gunicorn / Render</text>
+    <text x="0" y="394" fill="#C9D1D9" font-size="12">• Event Lead: Monisha S (Managed 180+ active collegiate participants)</text>
+    <text x="0" y="416" fill="#C9D1D9" font-size="12">• 8 Progressive Puzzles: Cryptography, Stego, Web Inspection, Logic</text>
+  </g>
+
+  <!-- Right Side: Live CTF Leaderboard & Admin Stats -->
+  <rect x="735" y="85" width="420" height="545" rx="8" fill="#0D1117" stroke="#30363D" />
+  <rect x="735" y="85" width="420" height="42" rx="8" fill="#161B22" />
+  <text x="755" y="112" fill="#FFA657" font-size="13" font-weight="bold">LIVE LEADERBOARD (TOP 8 QUALIFIERS)</text>
+  
+  <g transform="translate(755, 145)">
+    <!-- Rank 1 -->
+    <rect x="0" y="0" width="380" height="44" rx="6" fill="#21262D" stroke="#D29922"/>
+    <text x="14" y="27" fill="#F0883E" font-size="13" font-weight="bold">#1 CyberTitans</text>
+    <text x="366" y="27" fill="#7EE787" font-size="12" text-anchor="end">8/8 [14m 22s]</text>
+
+    <!-- Rank 2 -->
+    <rect x="0" y="54" width="380" height="44" rx="6" fill="#161B22"/>
+    <text x="14" y="81" fill="#C9D1D9" font-size="13">#2 Shadow Strikers</text>
+    <text x="366" y="81" fill="#7EE787" font-size="12" text-anchor="end">7/8 [16m 45s]</text>
+
+    <!-- Rank 3 -->
+    <rect x="0" y="108" width="380" height="44" rx="6" fill="#161B22"/>
+    <text x="14" y="135" fill="#C9D1D9" font-size="13">#3 NullPointer Gang</text>
+    <text x="366" y="135" fill="#7EE787" font-size="12" text-anchor="end">7/8 [18m 10s]</text>
+
+    <!-- Rank 4 -->
+    <rect x="0" y="162" width="380" height="44" rx="6" fill="#161B22"/>
+    <text x="14" y="189" fill="#8B949E" font-size="13">#4 Binary Blitzers</text>
+    <text x="366" y="189" fill="#7EE787" font-size="12" text-anchor="end">6/8 [19m 02s]</text>
+
+    <!-- Event stats box -->
+    <rect x="0" y="228" width="380" height="180" rx="8" fill="#161B22" stroke="#30363D"/>
+    <text x="16" y="258" fill="#58A6FF" font-size="13" font-weight="bold">EVENT LEAD METRICS</text>
+    <text x="16" y="286" fill="#C9D1D9" font-size="12">Total Participants: 180+ students</text>
+    <text x="16" y="310" fill="#C9D1D9" font-size="12">Total Teams Registered: 48 teams</text>
+    <text x="16" y="334" fill="#C9D1D9" font-size="12">Server Uptime: 100% on Gunicorn/Render</text>
+    <text x="16" y="358" fill="#C9D1D9" font-size="12">Pravrutti 2.0 Annual Tech Fest, MSRUAS</text>
+    <text x="16" y="382" fill="#7EE787" font-size="12">Status: Event Executed Successfully</text>
+  </g>
+</svg>

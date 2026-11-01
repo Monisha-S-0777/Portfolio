@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0F172A;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="260" height="675" fill="#1E293B" stroke="#334155" />
+  <text x="24" y="44" fill="#F8FAFC" font-size="18" font-weight="bold">BEL // TRACE</text>
+  <text x="24" y="66" fill="#94A3B8" font-size="11">Track Record Analysis Engine</text>
+
+  <!-- Sidebar Nav items -->
+  <g transform="translate(16, 100)">
+    <rect x="0" y="0" width="228" height="38" rx="8" fill="#3B82F6"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="13" font-weight="600">📊 Overview &amp; Logs</text>
+
+    <rect x="0" y="48" width="228" height="38" rx="8" fill="transparent"/>
+    <text x="16" y="72" fill="#CBD5E1" font-size="13">⚠️ Isolation Forest Anomaly</text>
+
+    <rect x="0" y="96" width="228" height="38" rx="8" fill="transparent"/>
+    <text x="16" y="120" fill="#CBD5E1" font-size="13">📈 Parameter Correlation</text>
+
+    <rect x="0" y="144" width="228" height="38" rx="8" fill="transparent"/>
+    <text x="16" y="168" fill="#CBD5E1" font-size="13">📑 ReportLab PDF Generator</text>
+  </g>
+
+  <rect x="16" y="550" width="228" height="90" rx="8" fill="#0F172A" stroke="#334155"/>
+  <text x="28" y="576" fill="#64748B" font-size="10" font-family="monospace">INTERNSHIP AFFILIATION</text>
+  <text x="28" y="598" fill="#F8FAFC" font-size="12" font-weight="600">Bharat Electronics (BEL)</text>
+  <text x="28" y="618" fill="#38BDF8" font-size="11">AI/ML Intern — 2026</text>
+
+  <!-- Main Content Area -->
+  <rect x="280" y="24" width="895" height="627" rx="12" fill="#1E293B" stroke="#334155"/>
+  
+  <!-- Header Banner -->
+  <text x="310" y="65" fill="#F8FAFC" font-size="20" font-weight="bold">Operational Track Parameter Analysis &amp; Anomaly Detection</text>
+  <text x="310" y="88" fill="#94A3B8" font-size="13">Unsupervised Machine Learning Pipeline for Radar &amp; Sensor Telemetry</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(310, 110)">
+    <rect x="0" y="0" width="195" height="74" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="16" y="24" fill="#94A3B8" font-size="11">TOTAL LOGS PARSED</text>
+    <text x="16" y="54" fill="#38BDF8" font-size="22" font-weight="bold">142,850</text>
+
+    <rect x="215" y="0" width="195" height="74" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="16" y="24" fill="#94A3B8" font-size="11">ANOMALIES DETECTED</text>
+    <text x="16" y="54" fill="#F43F5E" font-size="22" font-weight="bold">312 (0.21%)</text>
+
+    <rect x="430" y="0" width="195" height="74" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="16" y="24" fill="#94A3B8" font-size="11">MODEL APPLIED</text>
+    <text x="16" y="54" fill="#A855F7" font-size="17" font-weight="bold">Isolation Forest</text>
+
+    <rect x="645" y="0" width="195" height="74" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="16" y="24" fill="#94A3B8" font-size="11">REPORT STATUS</text>
+    <text x="16" y="54" fill="#10B981" font-size="17" font-weight="bold">PDF Export Ready</text>
+  </g>
+
+  <!-- Chart 1: Time Series & Anomaly Scatter -->
+  <rect x="310" y="205" width="530" height="235" rx="8" fill="#0F172A" stroke="#334155"/>
+  <text x="330" y="235" fill="#F8FAFC" font-size="13" font-weight="600">Track Parameter Variance vs Time (Sec)</text>
+  
+  <!-- Line Chart Path -->
+  <path d="M 340 370 Q 420 330 500 350 T 660 310 T 810 330" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+  <path d="M 340 370 Q 420 330 500 350 T 660 310 T 810 330 L 810 400 L 340 400 Z" fill="rgba(56,189,248,0.06)"/>
+  
+  <!-- Anomaly Points (Outliers) -->
+  <circle cx="530" cy="270" r="7" fill="#F43F5E" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="542" y="270" fill="#F43F5E" font-size="10" font-family="monospace">Anomaly #84</text>
+  <circle cx="710" cy="255" r="7" fill="#F43F5E" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="722" y="255" fill="#F43F5E" font-size="10" font-family="monospace">Anomaly #112</text>
+
+  <!-- Chart 2: Correlation Heatmap / Feature Distribution -->
+  <rect x="860" y="205" width="285" height="235" rx="8" fill="#0F172A" stroke="#334155"/>
+  <text x="880" y="235" fill="#F8FAFC" font-size="13" font-weight="600">Parameter Correlations</text>
+  <!-- Mini matrix blocks -->
+  <g transform="translate(880, 255)">
+    <rect x="0" y="0" width="70" height="45" fill="rgba(59,130,246,0.8)" rx="4"/>
+    <text x="35" y="28" fill="#FFF" font-size="11" text-anchor="middle">1.00</text>
+    <rect x="80" y="0" width="70" height="45" fill="rgba(59,130,246,0.4)" rx="4"/>
+    <text x="115" y="28" fill="#FFF" font-size="11" text-anchor="middle">0.42</text>
+    <rect x="160" y="0" width="70" height="45" fill="rgba(244,63,94,0.6)" rx="4"/>
+    <text x="195" y="28" fill="#FFF" font-size="11" text-anchor="middle">-0.71</text>
+
+    <rect x="0" y="55" width="70" height="45" fill="rgba(59,130,246,0.4)" rx="4"/>
+    <text x="35" y="83" fill="#FFF" font-size="11" text-anchor="middle">0.42</text>
+    <rect x="80" y="55" width="70" height="45" fill="rgba(59,130,246,0.8)" rx="4"/>
+    <text x="115" y="83" fill="#FFF" font-size="11" text-anchor="middle">1.00</text>
+    <rect x="160" y="55" width="70" height="45" fill="rgba(59,130,246,0.2)" rx="4"/>
+    <text x="195" y="83" fill="#FFF" font-size="11" text-anchor="middle">0.18</text>
+
+    <rect x="0" y="110" width="70" height="45" fill="rgba(244,63,94,0.6)" rx="4"/>
+    <text x="35" y="138" fill="#FFF" font-size="11" text-anchor="middle">-0.71</text>
+    <rect x="80" y="110" width="70" height="45" fill="rgba(59,130,246,0.2)" rx="4"/>
+    <text x="115" y="138" fill="#FFF" font-size="11" text-anchor="middle">0.18</text>
+    <rect x="160" y="110" width="70" height="45" fill="rgba(59,130,246,0.8)" rx="4"/>
+    <text x="195" y="138" fill="#FFF" font-size="11" text-anchor="middle">1.00</text>
+  </g>
+
+  <!-- Bottom Log Inspection & Report Export Section -->
+  <rect x="310" y="455" width="835" height="175" rx="8" fill="#0F172A" stroke="#334155"/>
+  <text x="330" y="485" fill="#F8FAFC" font-size="13" font-weight="600">ETL Pipeline &amp; Automated Audit Export</text>
+  <text x="330" y="510" fill="#94A3B8" font-size="12">Python · Pandas · NumPy · Scikit-learn Isolation Forest · Streamlit · Plotly · Matplotlib · ReportLab</text>
+  
+  <rect x="330" y="530" width="220" height="38" rx="6" fill="#10B981" />
+  <text x="360" y="554" fill="#FFFFFF" font-size="12" font-weight="bold">📥 DOWNLOAD AUDIT PDF</text>
+
+  <rect x="565" y="530" width="200" height="38" rx="6" fill="#334155" />
+  <text x="590" y="554" fill="#F8FAFC" font-size="12">REFRESH STREAMLIT</text>
+  
+  <text x="330" y="605" fill="#64748B" font-size="11" font-family="monospace">TRACE ENGINE // DEVELOPED AT BHARAT ELECTRONICS LIMITED (BEL) BY MONISHA S</text>
+</svg>
